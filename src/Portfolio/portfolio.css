@@ -1,0 +1,314 @@
+:root{
+    --h-color : #20c997;
+    --bg-color1 :#212529;
+    --bg-coor-2: #4c4d4d;
+}
+.portfolio-section{
+    width:100%;
+    margin-left: auto;
+    text-align: left;
+    position: relative;
+}
+.portfolio-body{
+    width: 81%;
+    height: 100%;
+    margin-left: auto;
+    text-align: left; 
+    position: relative;
+}
+/* Top Tag section */
+.portfolio-tag{
+   width: auto;
+   display: block;
+   text-align: center;
+   position: relative;
+}
+
+.portfolio-body .bg-text{
+   padding-top: 50px;
+ }
+
+/* Tag section end */
+
+
+/* Work div start */
+.work-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 6%;
+    margin-top: 50px;
+}
+.my-work{
+  width: 100%;
+  height: 250px;
+  margin-left: 7vw;
+  box-shadow: 0px 0px 10px 0px whitesmoke;
+  border-radius: 10px;
+}
+.work-div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+.work-image{
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/project1.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+}
+.work-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.text-sec{
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 0%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 0.6s;
+    border-radius: 10px;
+}
+.text-sec h1{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+.text-sec p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: cornsilk;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* button into hover div */
+.share{
+   color: white;
+}
+.share ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 5%;    
+}
+.share ul li{
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-color: var(--h-color);
+}
+
+.share ul li:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+@keyframes btn{
+    from{
+        transform: translateY(-120px);
+    }
+}
+
+
+/* Post open brief section */
+.post-brief{
+    background-color: rgb(196, 201, 201);
+    position: fixed;
+    top: 5%;
+    bottom: 0;
+    left: 5%;
+    z-index: 999;
+    width: 0%;
+    height: 90%;
+    overflow: hidden;
+    transition: width 0.8s;
+    border-radius: 10px;
+}
+.post-brief h1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 30px 0px 0px 0px;
+    color: rgb(92, 87, 87);
+}
+.brief-main{
+   display: grid;
+   grid-template-columns: 60% 40%;
+   height: 90%;
+   margin: 0px;
+}
+#cross{
+    margin-left: 29%;
+    font-size: 20px;
+    margin-top: -17px;
+    position: absolute;
+}
+#cross:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.image-showcase{
+    height: 80%;
+    width: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: 35px;
+    display: flex;
+    position: relative;
+}
+.image-showcase h3{
+    position: absolute;
+    z-index: 999;
+    font-size: 25px;
+    color: rgb(65, 58, 58);
+    border-color: var(--h-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    opacity: 0;
+}
+.image-showcase h3:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.image-showcase:hover{
+    cursor: pointer;
+}
+.image-showcase h3:first-child{
+    margin-left: 8%;
+    margin-top: 32%;
+}
+
+.image-showcase h3:last-child{
+    left: 86%;
+    margin-top: 32%;
+    
+}
+
+.image-showcase img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.about-project{
+   margin-left: 5%;
+   margin-top: 4%;
+   height: 90%;
+   width: 90%;
+}
+.about-project h2{
+    font-size: 21px;
+    padding: 10px;
+    color: var(--h-color);
+}
+.about-project p{
+    margin-left: 2%;
+    font-size: 19px;
+    line-height: 35px;
+}
+.details{
+
+}
+.details ul{
+    list-style: none;
+}
+.details ul li b{
+    color:rgb(7, 15, 15);
+}
+
+ /* Responsive about me start for 1050px */
+ @media screen and (max-width:1050px){
+  
+    .portfolio-body .bg-text{
+         font-size: 70px;
+     }
+    .portfolio-body .main-text{
+       margin-top: -65px;
+     }
+     .portfolio-body{
+         width: 100%;
+     }
+     .work-section{
+         
+        grid-template-columns: 45% 45%;
+                
+     }
+     .my-work{
+         margin-left: 8%;
+
+     }
+ }
+ 
+
+/* Responsive education and job box design */
+
+@media screen and (max-width:900px){
+
+    
+ }
+ @media screen and (max-width:650px){
+    
+    .work-section{
+        grid-template-columns: 80%;
+        grid-column-gap: 5px;
+        margin-left: 0%;
+        
+     }
+     .my-work{
+         margin-left: 12%;
+         background-color: #20c997;
+     }
+   
+}
+  @media screen and (max-width:500px){
+    .portfolio-body .bg-text{
+         font-size: 12vw;
+     }
+     .portfolio-body{
+        width: 95%;
+     }
+    .portfolio-body .main-text{
+       margin-top: -12vw;
+     }
+     .work-section{
+        grid-template-columns: 90%;
+         grid-column-gap: 0px;
+         grid-row-gap: 20px;
+        margin-left: 0%;
+     }
+     .my-work{
+         margin-left: 3%;
+         background-color: #20c997;
+     }
+     
+ }
+ @media screen and (max-width:450px){
+    
+  
+   
+}

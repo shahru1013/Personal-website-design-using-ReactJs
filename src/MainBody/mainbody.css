@@ -1,0 +1,399 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+:root{
+    --h-color : #20c997;
+    --bg-color1 :#212529;
+    --bg-coor-2: #4c4d4d;
+}
+.main-body{
+   height: 100%;
+   width: 100%;
+   background-color: aqua;
+}
+.body-resize{
+   height: 100%;
+   width: 100%;
+   background-color: beige;
+}
+/* Left section start */
+.left-section{
+   height: 100%;
+   overflow: scroll;
+   width: 260px;
+   background-color:rgb(17, 17, 17);
+   float: left;
+   position: fixed;
+   z-index: 999;
+}
+.left-section::-webkit-scrollbar { 
+    display: none; 
+}
+/*Image name section start */
+.img-name-sec{
+   height: 220px;
+   width: 100%;
+   margin-top: 40px;
+   margin-left: auto;
+}
+.img-name-sec img,.responsive-navbar img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgb(116, 110, 110);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-name-sec img:hover{
+    cursor: pointer;
+}
+.img-name-sec p:hover{
+    cursor: pointer;
+}
+.img-name-sec p{
+   font-size: 20px;
+   letter-spacing: 1px;
+   font-weight: 550;
+   color: white;
+   text-align: center;
+   margin-top: 15px;
+}
+
+/*Navbar start*/
+.navbar-sec{
+   color: white;
+   font-size: 16px;
+   letter-spacing: 1px;
+   height: 55%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.navbar-sec ul{
+   list-style-type: none;
+   text-align: center;
+   background-color: rgb(70, 62, 62);
+   width: 100%;
+   box-shadow: 0px 0px 10px 10px rgb(100, 80, 80);
+
+}
+.navbar-sec ul li{
+   padding: 10px;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   transition: 0.5s;
+   outline: none;
+   
+}
+.navbar-sec ul li:hover{
+    color: var(--h-color);
+    cursor: pointer; 
+}
+.navbar-sec ul li:focus{
+    color: var(--h-color);    
+}
+
+/*Social icon sec*/
+
+.social-section{
+    color: white;
+    height: 30px;
+    width: 100%;
+}
+#nav-bars-res{
+    display: none;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.social-section ul{
+    text-align: center;
+}
+.social-section ul li{
+     display: inline;
+     margin-left: 10px;
+     margin-right: 10px;
+     transition: 1s;
+}
+.social-section li:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/*Left Section end */
+
+/* Responsive navbar design */
+.responsive-navbar{
+    position:fixed;
+    z-index: 999;
+    color: white;
+    width: 100%;
+    background-color: black;
+    margin-top: 60px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.responsive-navbar ul{
+    list-style-type: none;
+    text-align: left;
+ }
+ .responsive-navbar ul li{
+    padding: 10px;
+    margin-top: 7px;
+    transition: 0.5s;
+    outline: none;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 19px;
+ }
+ .responsive-navbar ul li:hover{
+     color: var(--h-color);
+     cursor: pointer; 
+ }
+ .responsive-navbar ul li:focus{
+     color: var(--h-color);    
+ }
+
+
+/*Responsive when width under 1050 pixels for left navbar section start */
+
+@media screen and (max-width:1050px){
+    /* make the left section non visible */
+    #text-animate-section-id{
+        width: 100%;
+        height: 100%;
+        font-size: 3vw;
+    }
+    #text-animate-section-id span{
+       font-size: 5vw;
+    }
+    .left-section{
+        width: 100%;
+        height: 60px;
+        display: inline-block;
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+    }
+    #hire-button-section-id{
+        width:100%;
+    }
+    .img-name-sec{
+        height: auto;
+        width: 25vw;
+        margin-top: 0%;
+        height: 100%;
+        left: 0%;
+        float: left;
+        margin-left: 20px;
+        display: flex;
+        text-align: center;
+    }
+    .img-name-sec p{
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 23px;
+    }
+    .img-name-sec img{
+        display: none;
+    }
+    .navbar-sec{
+        display: none;
+    }
+    .social-section{
+       width: 100%;
+       height: 100%;
+    }
+    .social-section ul{
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: right;
+    }
+    .social-section ul li{
+        margin-top: 20px;
+    }
+    .navbar-sec{
+        height: 0%;
+    }
+    #nav-bars-res{
+        display: block;
+    }
+}
+/*Responsive when width under 700 pixels for left navbar section start */
+@media screen and (max-width:700px){
+    .img-name-sec p{
+        font-size: 19px;
+    }
+    .img-name-sec{
+        width: 35vw;
+    }
+    #text-animate-section-id{
+        font-size: 4vw;
+    }
+    #text-animate-section-id span{
+       font-size: 6vw;
+    }
+}
+/*Responsive when width under 400 pixels for left navbar section start */
+@media screen and (max-width:400px){
+    .img-name-sec{
+        width: 35vw;
+        margin-left: 5px;
+        
+    }
+    .img-name-sec p{
+        font-size: 15px;
+    }
+    #text-animate-section-id{
+        font-size: 4vw;
+    }
+    #text-animate-section-id span{
+       font-size: 6vw;
+    }
+}
+
+/*Responsive when width under 1050,700,400 pixels for left navbar section end */
+
+/*Right Section / Home Section Start */
+.right-section{
+    height: 100vh;
+    width: 100%;
+    float: right;
+    display: block;
+    position: relative;
+    background-color: violet;
+}
+
+.home-section{
+   height: 100%;
+   width: 100%;
+   background-color: turquoise;
+   background-image: url('../Images/background.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.home-body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.77);
+}
+.text-animate-section{
+    width: 81%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-animate-section span{
+    display: inline;
+}
+.text-animate-section span{
+     font-size: 60px;
+     font-weight: 700;
+     box-shadow: 0px 0px 5px rgb(116, 110, 110);
+}
+.text-animate-section h3{
+   margin-top: -100px;
+   margin-bottom: 50px;
+   letter-spacing: 2px;
+}
+.text-animate-section p{
+   margin-top: 50px;
+   font-size: large;
+}
+
+
+.hire-button-section{
+   width:80%;
+   display: block;
+   margin-left: auto;
+   margin-top: -200px;
+   text-align: center;
+ 
+}
+.hire-button-section button{
+    height: 50px;
+    width: 190px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border-color: rgb(116, 110, 110);
+    color: white;
+    transition: 1s;
+    outline: none;
+}
+.hire-button-section button:hover{
+    cursor: pointer;
+    background-color: var(--h-color);
+}
+.hire-button-section button:focus{
+    background-color: var(--h-color);
+}
+#angle-down{
+    color: white;
+    margin-top: 100px;
+    animation: animate-angle-down 1s infinite;
+}
+#angle-down:hover{
+    cursor: pointer;
+}
+
+/*animate angle down*/
+@keyframes animate-angle-down{
+     0%{
+         transform: translateY(-20px);
+         opacity: 0.4;
+     }
+     100%{
+         transform: translateY(10px);
+         opacity: 0.9;
+     }
+}
+
+/*animate for blinking */
+@keyframes animate-blink{
+    0%{
+        opacity: 0;
+    }  
+}
+
+/* About me */
+
+.about-me{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.resume{
+    height: auto;
+    background-color: rgba(0,0,0,0.04);
+    padding-bottom: 40px;
+}
+.portfolio{
+    height: auto;
+    padding-bottom: 110px;
+}
+.contact-se{
+    height: auto;
+    background-color: rgba(0,0,0,0.04);
+    padding-bottom: 100px;
+}

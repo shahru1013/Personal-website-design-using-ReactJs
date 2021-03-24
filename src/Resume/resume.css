@@ -1,0 +1,276 @@
+:root{
+    --h-color : #20c997;
+    --bg-color1 :#212529;
+    --bg-coor-2: #4c4d4d;
+}
+.resume-sectio{
+    width:100%;
+    margin-left: auto;
+    text-align: left;
+    background-color: hotpink;
+}
+.resume-body{
+    width: 81%;
+    height: 100%;
+    margin-left: auto;
+    text-align: left; 
+    position: relative;
+}
+/* Top Tag section */
+.resume-tag{
+   width: auto;
+   display: block;
+   text-align: center;
+   position: relative;
+}
+
+.resume-body .bg-text{
+   padding-top: 50px;
+ }
+
+/* Tag section end */
+
+
+
+/* About experience and studies */
+.resume-mid-designation{
+  display: flex;
+  width: 100%;
+  font-family: 'poppins';
+}
+.my-education{
+   margin-left: 5vw;
+   width: 40%;
+  
+}
+.my-experience{
+   margin-left: auto;
+   margin-right: 5vw;
+   width: 40%;
+}
+.job-details{
+    line-height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(187, 187, 187);
+    padding:20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.title{
+    font-size: 24px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+.date{
+    width: 85px;
+    height: auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: var(--h-color);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.job-details h3{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(61, 55, 55);
+}
+.where{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.detail{
+    margin-bottom: -15px;
+    font-size: 17px;
+}
+
+ /* Skill lIst */
+
+ .my-skills-section{
+     width: 100%;
+     margin-left: auto;
+ }
+ .skill-list{
+    margin-top: 30px; 
+    display: flex;
+    margin-left: 0vw;
+}
+.f-sec{
+width: 35%;
+}
+.s-sec{
+    width: 35%;
+    margin-left: 15.5%;
+}
+
+.skill-list ul li{
+    list-style-type: none;
+    padding-bottom: 30px;
+    color:rgb(112, 105, 105);
+    font-weight: 900;
+
+}
+.skill-list #myProgress {
+    width: 100%;
+    background-color: #ddd;
+    margin-left: 6.5vw;
+    border-radius: 5px;
+  }
+  
+  .skill-list  .myBar {
+    width: 10%;
+    height: 10px;
+    background-color: var(--h-color);
+    border-radius: 5px;
+  }
+  .skill-list ul li p{
+      float: left;
+      margin-top: -3vh;
+      margin-left: 6.4vw;
+  }
+  .skill-title{
+      margin-top: 10px;
+      letter-spacing: 2px;
+      text-align: center;
+  }
+  .resume-body button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 240px;
+      height: 40px;
+      background-color: transparent;
+      color: black;
+      border-radius: 30px;
+      border-style: none;
+      font-size: 17px;
+      outline: none;
+      margin-top: 10px;
+      box-shadow: 0px 0px 15px 0px rgb(158, 156, 156);
+      margin-bottom: 50px;
+  }
+  
+  .resume-body button:hover{
+      cursor: pointer;
+  }
+  /* Responsive about me start for 1050px */
+@media screen and (max-width:1050px){
+  
+    .resume-body .bg-text{
+         font-size: 70px;
+     }
+    .resume-body .main-text{
+       margin-top: -65px;
+     }
+     .resume-body{
+         width: 95%;
+     }
+ }
+ 
+
+/* Responsive education and job box design */
+
+@media screen and (max-width:900px){
+    .resume-mid-designation{
+        display: flex;
+        flex-direction: column;
+    }
+    .my-education{
+     margin-left: 5vw;
+     width: 70%;
+    
+  }
+
+  .my-experience{
+     margin-left: auto;
+     margin-right: 5vw;
+     width: 70%;
+  }
+  .my-skills-section{
+    width: 100%;
+    margin-left: -5vw;
+}
+  .skill-list{
+     display: flex;
+     flex-direction: column;
+     margin-left: 0px;
+     margin-right: 40px;
+     
+ }
+ .f-sec{
+ width: 80%;
+ margin-left: 0px;
+ margin-left: 15vw;
+ margin-right: auto;
+ 
+ }
+ .s-sec{
+     width: 80%;
+     margin-left: 0px;
+     margin-left: 15vw;
+     margin-right: auto;
+ }
+ .skill-list ul li p{
+    float: left;
+    margin-top: -4px;
+    margin-left: -8vw;
+}
+ }
+  @media screen and (max-width:500px){
+    .resume-body .bg-text{
+         font-size: 12vw;
+     }
+     .resume-body{
+        width: 95%;
+     }
+    .resume-body .main-text{
+       margin-top: -12vw;
+     }
+     
+ }
+ @media screen and (max-width:450px){
+     .resume-mid-designation{
+         display: flex;
+         flex-direction: column;
+     }
+     .my-education{
+      margin-left: 0px;
+      width: 95%;
+      margin-top: 20px;
+     
+   }
+   .my-experience{
+      margin-left: auto;
+      margin-right: 0vw;
+      margin-left: 0px;
+      width: 95%;
+   }
+   .f-sec{
+    width: 90%;
+    margin-left: 0px;
+    margin-left: 10vw;
+    margin-right: auto;
+    
+    }
+    .s-sec{
+        width: 90%;
+        margin-left: 0px;
+        margin-left: 10vw;
+        margin-right: auto;
+    }
+    .skill-list ul li p{
+        float: left;
+        margin-top: -4vh;
+        margin-left: 6vw;
+        padding-top: 3px;
+    }
+  }

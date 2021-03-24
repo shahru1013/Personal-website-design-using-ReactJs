@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+}
+:root{
+    --h-color : #20c997;
+    --bg-color1 :#212529;
+    --bg-coor-2: #4c4d4d;
+}
+.about-me-section{
+    width:100%;
+    margin-left: auto;
+    height: auto;
+    text-align: left;
+    
+}
+.about-me-body{
+    width: 81%;
+    margin-left: auto;
+    text-align: left;
+    margin-top: 5px;
+    height: auto;
+    
+}
+/* Top Tag section */
+.about-tag{
+   text-align: center;
+   position: relative;
+}
+.bg-text{
+   position: relative;
+   font-size: 90px;
+   opacity: 0.04;
+   z-index: -1;
+   
+}
+.main-text{
+  width: 100%;
+  position: absolute;
+  color: rgb(68, 63, 63);
+  z-index: 999;
+  margin-top: -75px;
+  z-index: -999;
+}
+.main-text h1{
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-top: 5px;
+    background-color: var(--h-color);
+    text-align: center;
+    
+}
+/* Tag section end */
+
+/* about-me-mid section start */
+
+ .about-me-mid{
+    margin-left: 6vw;
+    display: flex;
+    margin-top: 5vh;
+}
+.about-me-brief-l{
+  width: 50%;
+}
+.about-me-brief-l p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.about-me-extra-r{
+   width: 33%;
+   text-align: left;
+   margin-left: 50px;
+}
+.about-me-extra-r ul{
+    list-style: none;
+    line-height: 30px;
+    font-size: 17px;
+}
+.about-me-extra-r ul li{
+    border-style: solid;
+    border-width: 1px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    margin-top: 5px;
+    border-color: rgb(204, 204, 204);
+}
+.about-me-extra-r ul li:last-child{
+    border-style: none;
+}
+.download-cv-btn{
+    height: 55px;
+    width: 180px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 17px;
+    background-color: var(--h-color);
+    color: white;
+    outline: none;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px 0px rgb(158, 156, 156);
+}
+.download-cv-btn:hover{
+    cursor: pointer;
+    background-color: #1caf83;
+    transition: 1s;
+}
+
+/* Responsive about me start for 1050px */
+@media screen and (max-width:1050px){
+    .about-me-body{
+        width: 100%;
+    }
+    .about-me-brief-l{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .about-me-mid{
+        flex-direction: column;
+    }
+    .bg-text{
+        font-size: 70px;
+    }
+    .main-text{
+      margin-top: -65px;
+    }
+    .about-me-extra-r{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:500px){
+
+    .about-me-brief-l{
+        width: 95%;
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+ 
+    .bg-text{
+        font-size: 12vw;
+    }
+    .main-text{
+      margin-top: -12vw;
+    }
+    .about-me-extra-r{
+        width:90%;
+    }
+}  

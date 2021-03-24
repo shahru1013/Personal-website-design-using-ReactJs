@@ -1,0 +1,196 @@
+:root{
+    --h-color : #20c997;
+    --bg-color1 :#212529;
+    --bg-coor-2: #4c4d4d;
+}
+.contact-section{
+    width:100%;
+    margin-left: auto;
+    text-align: left;
+}
+.contact-body{
+    width: 81%;
+    height: 100%;
+    margin-left: auto;
+    text-align: left; 
+    position: relative;
+}
+/* Top Tag section */
+.contact-tag{
+   width: auto;
+   display: block;
+   text-align: center;
+   position: relative;
+}
+
+.contact-body .bg-text{
+   padding-top: 50px;
+ }
+
+/* Tag section end */
+
+
+/* Main Section start */
+.main-section{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 35% 65%;
+}
+/* Left  */
+.left-sec{
+   height: auto;
+   margin-top: 10%;
+}
+/* address */
+.address{
+   margin-left: 20%;
+}
+.address h1{
+   font-size: 23px;
+   color: rgb(68, 61, 61);
+   padding-bottom: 10px;
+}
+.address p{
+  background-color: transparent;
+  font-size: 19px;
+}
+.contact{
+    background-color: transparent;
+}
+.contact p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.follow-icons{
+   margin-top: 25px;
+}
+.icon ul{
+   list-style: none;
+   margin-top: 10px;
+}
+.icon ul li{
+    display: inline;
+    padding:5px 20px 5px 0px;
+    border-style: none;
+    font-size: 25px;
+    color: rgba(0,0,0,0.7);
+}
+
+/* Right section form */
+.right-sec{
+    height: auto;
+}
+
+.input-div{
+   margin-left: 5%;
+}
+.right-sec h1{
+    margin-top: 5%;
+    font-size: 23px;
+    color: rgb(68, 61, 61);
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+.inputs{
+  margin-top: 20px;
+}
+.inputs input{
+    width: 45%;
+    padding:12px;
+    font-size: 18px;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(190, 185, 185);
+    border-radius: 5px;
+}
+.inputs input:last-child{
+    margin-left: 3%;
+}
+.text-area{
+   margin-top: 3%;
+}
+.text-area textarea{
+    width: 93%;
+    padding:12px;
+    font-size: 18px;
+    height: 130px;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(190, 185, 185);
+    border-radius: 5px;
+}
+
+.right-sec button{
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55px;
+    width: 180px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 20px;
+    background-color: var(--h-color);
+    color: white;
+    outline: none;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px 0px rgb(158, 156, 156);
+}
+ /* Responsive about me start for 1050px */
+ @media screen and (max-width:1050px){
+  
+    .contact-body .bg-text{
+         font-size: 70px;
+     }
+    .contact-body .main-text{
+       margin-top: -65px;
+     }
+     .contact-body{
+         width: 95%;
+     }
+     .address{
+        margin-left: 0%;
+     }
+     .input-div{
+        margin-left: 1%;
+     }
+     .right-sec h1{
+      
+         margin-left: 1%;
+     }
+ }
+ 
+
+/* Responsive education and job box design */
+
+@media screen and (max-width:900px){
+
+    
+ }
+ @media screen and (max-width:650px){
+    
+    .main-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+     }
+     .address{
+        margin-left: 2%;
+     }
+   
+}
+  @media screen and (max-width:500px){
+    .contact-body .bg-text{
+         font-size: 12vw;
+     }
+     .contact-body{
+        width: 95%;
+     }
+    .contact-body .main-text{
+       margin-top: -12vw;
+     }
+   
+     
+ }
